@@ -111,8 +111,8 @@ export class HomeComponent {
   ];
 
   staticPages = [
-    { icon: '📄', title: '服务条款', desc: '查看本站的服务使用条款和协议', href: '/assets/terms.html' },
-    { icon: '🔒', title: '隐私政策', desc: '了解我们如何处理和保护用户数据', href: '/assets/privacy.html' },
-    { icon: '🔧', title: '维护页面', desc: '系统维护时展示的独立静态页面', href: '/assets/maintenance.html' },
+    { icon: '📄', title: '服务条款', desc: '查看本站的服务使用条款和协议', href: '/terms' },
+    { icon: '🔒', title: '隐私政策', desc: '了解我们如何处理和保护用户数据', href: '/privacy' },
+    { icon: '🔧', title: '维护页面', desc: '系统维护时展示的独立静态页面', href: '/maintenance' },
   ];
 }

@@ -120,10 +120,10 @@ F4 执行：配置兜底后，`GET /non-existent`。断言：`status === 200`（
 
 ### G 组：构建产物验证
 
-G1 执行：`npm run build`。断言：`dist/angular-spa/browser/index.html` 存在。
+G1 执行：`npm run build`。断言：`dist/angular/browser/index.html` 存在。
 
-G2 执行：检查构建产物。断言：`dist/angular-spa/browser/` 下只有 1 个 `index.html`（不含其他路由的 HTML）。
+G2 执行：检查构建产物。断言：`dist/angular/browser/` 下只有 1 个 `index.html`（不含其他路由的 HTML）。
 
-G3 执行：检查构建产物。断言：`dist/angular-spa/browser/assets/` 下包含 `terms.html`、`privacy.html`、`maintenance.html`。
+G3 执行：检查构建产物。断言：`dist/angular/browser/` 下包含 `terms.html`、`privacy.html`、`maintenance.html`（与 index.html 同级）。
 
 G4 执行：检查构建产物中 JS 文件。断言：存在包含 `pushState` 或 `popstate` 关键词的 JS 文件（SPA 路由特征）。
