@@ -93,11 +93,11 @@ C2 执行：`GET /random/deep/path`。断言：`status === 200`（同上）。
 
 ### D 组：静态资源页面（不走 SPA 路由）
 
-D1 执行：`GET /assets/terms.html`。断言：`status === 200`，`content-type` 包含 `text/html`，`body` 包含 `服务条款`。
+D1 执行：`GET /assets/terms`。断言：`status === 200`，`content-type` 包含 `text/html`，`body` 包含 `服务条款`。
 
-D2 执行：`GET /assets/privacy.html`。断言：`status === 200`，`body` 包含 `隐私政策`。
+D2 执行：`GET /assets/privacy`。断言：`status === 200`，`body` 包含 `隐私政策`。
 
-D3 执行：`GET /assets/maintenance.html`。断言：`status === 200`，`body` 包含 `系统维护中`。
+D3 执行：`GET /assets/maintenance`。断言：`status === 200`，`body` 包含 `系统维护中`。
 
 > **说明**：这些是 `src/assets/` 下的纯静态 HTML，构建时原样拷贝到产物目录，不经过 Angular Router。
 > 浏览器直接加载独立 HTML 文件，不依赖 JS bundle。
